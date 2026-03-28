@@ -5,7 +5,6 @@ import { LanguageClient, LanguageClientOptions, ServerOptions } from 'vscode-lan
 let client: LanguageClient;
 
 export function activate(context: ExtensionContext) {
-    /مسار ملف البايثون
     const serverPath = context.asAbsolutePath(path.join('server', 'server.py'));
     
     const serverOptions: ServerOptions = {
