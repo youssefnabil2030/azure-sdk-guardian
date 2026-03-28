@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-sdk-guardian"
+version = "0.1.0"
+authors = [
+  { name="Youssef Nabil", email="ynjob12@gmail.com" },
+]
+description = "Automated Namespace Integrity & Collision Detection for Azure SDK Python"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: Pylint",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+    "pylint>=3.0.0",
+    "astroid>=3.0.0",
+    "pygls>=1.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/youssefnabil2030/azure-sdk-guardian"
+"Bug Tracker" = "https://github.com/youssefnabil2030/azure-sdk-guardian/issues"
