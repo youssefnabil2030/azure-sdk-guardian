@@ -5,12 +5,12 @@ import { LanguageClient, LanguageClientOptions, ServerOptions } from 'vscode-lan
 let client: LanguageClient;
 
 export function activate(context: ExtensionContext) {
-    // مسار ملف البايثون
+    /مسار ملف البايثون
     const serverPath = context.asAbsolutePath(path.join('server', 'server.py'));
     
     const serverOptions: ServerOptions = {
         command: 'python', 
-        args: [serverPath],
+        args: [./server/server.py],
     };
 
     const clientOptions: LanguageClientOptions = {
